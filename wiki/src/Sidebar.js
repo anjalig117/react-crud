@@ -12,7 +12,7 @@ export default function Sidebar({ pageSelected }){
             </div>
             <div className = "mt-2">
                 <div role = "button" onClick = { () => goToPage('home') }>Home</div>
-                <div role = "button" onClick = { () => goToPage('new page') }>New Page</div>
+                {/* <div role = "button" onClick = { () => goToPage('new page') }>New Page</div> */}
                 <div role = "button" onClick = { () => goToPage('random page') }>Random Page</div>
             </div>
         </>

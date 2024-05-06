@@ -4,7 +4,6 @@ import Sidebar from './Sidebar.js';
 import RightBar from './RightBar.js';
 import { useState } from "react";
 import AllPages from './AllPages.js';
-import NewPage from './newPage.js';
 import SinglePage from './SinglePage.js';
 import Home from './home.js';
 
@@ -31,7 +30,7 @@ function App() {
           </div>
           <div className = "col-md-9  p-4">
             <RightBar>
-              { page === 'new' ? <NewPage/> : (page === 'random' ? <SinglePage random = {true}/> : <Home home = { true }/>)}
+              { page === 'new' ? <SinglePage random = { true }/> : (page === 'random' ? <SinglePage random = {true}/> : <Home home = { true }/>)}
             </RightBar>
           </div>
       </div>
