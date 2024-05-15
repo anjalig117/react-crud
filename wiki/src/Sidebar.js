@@ -8,9 +8,9 @@ export default function Sidebar({ pageSelected }){
     return(
         <>
             <div className = "mb-2">
-                <h1> Wiki</h1>
+                <h1 className="text-light"> Wiki</h1>
             </div>
-            <div className = "mt-2">
+            <div className = "mt-2 text-light">
                 <div role = "button" onClick = { () => goToPage('home') }>Home</div>
                 {/* <div role = "button" onClick = { () => goToPage('new page') }>New Page</div> */}
                 <div role = "button" onClick = { () => goToPage('random page') }>Random Page</div>

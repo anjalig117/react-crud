@@ -24,7 +24,7 @@ function App() {
   }
   return (
     <>
-      <div className = "row">
+      <div className = "row sidebar">
           <div className = "col-md-3 bg-secondary p-4">
               <Sidebar pageSelected = { pageChange }/>
           </div>
