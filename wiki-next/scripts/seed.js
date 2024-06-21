@@ -34,3 +34,13 @@ async function seedEntries(client){
         throw error;
     }
 }
+
+async function main(){
+    const client = await db.connect();
+    await seedEntries(client);
+    await client.end();
+}
+
+main().catch((err) => {
+    console.error('An error occured while attempting to seed the database: ', error)
+})
